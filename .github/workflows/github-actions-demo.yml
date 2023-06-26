@@ -15,7 +15,7 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - name: List repo files
+      - name: Show repo info
         run: |-
           echo "Event: ${{ github.event_name }}"
           echo "Branch name: ${{ github.ref }}"
