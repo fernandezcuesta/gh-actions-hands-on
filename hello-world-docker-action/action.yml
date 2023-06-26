@@ -1,0 +1,14 @@
+name: Hello World Docker Action
+description: Get a random quote
+inputs:
+  who-to-greet:
+    required: true
+    default: world
+outputs:
+  quote:
+    description: A random quote for caller
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.who-to-greet }}
