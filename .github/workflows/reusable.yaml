@@ -8,7 +8,7 @@ on:
         required: true
         type: string
     outputs:
-      current-time: ${{ jobs.reusable-job.current-time }}
+      current-time: ${{ jobs.reusable-job.outputs.current-time }}
 jobs:
   reusable-job:
     runs-on: ubuntu-latest
