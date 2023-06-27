@@ -3,7 +3,7 @@ on:
   - workflow_dispatch
 jobs:
   call-workflow:
-    uses: ./.github/workflows/reusable.yml
+    uses: ./.github/workflows/reusable.yaml
     with:
       who-to-greet: '@fernandezcuesta'
   use-output:
